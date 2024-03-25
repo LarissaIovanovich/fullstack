@@ -21,47 +21,88 @@
             <button onclick="displayList('skills')">Skills</button>
             <button onclick="displayList('weapons')">Weapons</button>
         </div>
-
+        
         <div class="list-container" id="ailments-list">
             <h2>Ailments</h2>
+            <div class="group">
+                <label for="ailments-search">Busca</label>
+                <input type="text" id="ailments-search" class="form-control" maxlength="50" oninput="filterList(this.value, 'ailments')">
+            </div>
             <ul></ul>
         </div>
         <div class="list-container" id="armor-list">
             <h2>Armor</h2>
+            <div>
+                <label for="armor-search">Busca</label>
+                <input type="text" id="armor-search" class="form-control" maxlength="50" oninput="filterList(this.value, 'armor')">
+            </div>
             <ul></ul>
         </div>
         <div class="list-container" id="charms-list">
             <h2>Charms</h2>
+            <div class="group">
+                <label for="charms-search">Busca</label>
+                <input type="text" id="charms-search" class="form-control" maxlength="50" oninput="filterList(this.value, 'charms')">
+            </div>
             <ul></ul>
         </div>
         <div class="list-container" id="decorations-list">
             <h2>Decorations</h2>
+            <div class="group">
+                <label for="decorations-search">Busca</label>
+                <input type="text" id="decorations-search" class="form-control" maxlength="50" oninput="filterList(this.value, 'decorations')">
+            </div>
             <ul></ul>
         </div>
         <div class="list-container" id="events-list">
             <h2>Events</h2>
+            <div class="group">
+                <label for="events-search">Busca</label>
+                <input type="text" id="events-search" class="form-control" maxlength="50" oninput="filterList(this.value, 'events')">
+            </div>
             <ul></ul>
         </div>
         <div class="list-container" id="items-list">
             <h2>Items</h2>
+            <div class="group">
+                <label for="items-search">Busca</label>
+                <input type="text" id="items-search" class="form-control" maxlength="50" oninput="filterList(this.value, 'items')">
+            </div>
             <ul></ul>
         </div>
         <div class="list-container" id="locations-list">
             <h2>Locations</h2>
+            <div class="group">
+                <label for="locations-search">Busca</label>
+                <input type="text" id="locations-search" class="form-control" maxlength="50" oninput="filterList(this.value, 'locations')">
+            </div>
             <ul></ul>
         </div>
         <div class="list-container" id="monsters-list">
             <h2>Monsters</h2>
+            <div class="group">
+                <label for="monsters-search">Busca</label>
+                <input type="text" id="monsters-search" class="form-control" maxlength="50" oninput="filterList(this.value, 'monsters')">
+            </div>
             <ul></ul>
         </div>
         <div class="list-container" id="skills-list">
             <h2>Skills</h2>
+            <div class="group">
+                <label for="skills-search">Busca</label>
+                <input type="text" id="skills-search" class="form-control" maxlength="50" oninput="filterList(this.value, 'skills')">
+            </div>
             <ul></ul>
         </div>
         <div class="list-container" id="weapons-list">
             <h2>Weapons</h2>
+            <div class="group">
+                <label for="weapons-search">Busca</label>
+                <input type="text" id="weapons-search" class="form-control" maxlength="50" oninput="filterList(this.value, 'weapons')">
+            </div>
             <ul></ul>
         </div>
+
     </div>
     <script src="script.js"> </script>
 </body>
