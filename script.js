@@ -45,6 +45,17 @@ async function displayList(category, searchText = '') {
     container.classList.add('active');
 }
 
-function filterList(searchText, category) {  
-    displayList(category, searchText);
+async function search(category) {
+    const searchText = document.getElementById(`${category}-search`).value;
+    await displayList(category, searchText);
+
+    const container = document.getElementById(`${category}-list`);
+    const list = container.querySelector('ul');
+    const items = list.querySelectorAll('li');
+
+    if (items.length === 0) {
+        const errorMessage = document.createElement('p');
+        errorMessage.textContent = 'Nenhum resultado encontrado.';
+        list.appendChild(errorMessage);
+    }
 }
