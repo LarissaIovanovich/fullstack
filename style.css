@@ -1,0 +1,29 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .list-container {
+            display: none;
+        }
+        .list-container.active {
+            display: block;
+        }
+        .list-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .list-container ul li {
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
