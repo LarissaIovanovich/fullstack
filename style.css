@@ -1,29 +1,88 @@
+body {
+    position: relative;
+    z-index: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./img/844969.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        .list-container {
-            display: none;
-        }
-        .list-container.active {
-            display: block;
-        }
-        .list-container ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .list-container ul li {
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
+}
+
+.container {
+    transition: none;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.9px);
+    -webkit-backdrop-filter: blur(12.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+.list-container {
+    transition: none;
+    display: none;
+    margin-top: 20px;
+}
+
+.list-container.active {
+    display: block;
+}
+
+.list-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-container ul li {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.9px);
+    -webkit-backdrop-filter: blur(12.9px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.list-container ul li:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+input {
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+button {
+    color: #000000;
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    padding: 5px 10px;
+    border: solid #000000 2px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: pointer;
+    border-style: outset;
+    border-image: initial;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+    color: #000000;
+    border: solid 2px #2eed5b;
+}

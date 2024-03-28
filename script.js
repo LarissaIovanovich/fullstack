@@ -47,6 +47,8 @@ async function displayList(category, searchText = '') {
 
 async function search(category) {
     const searchText = document.getElementById(`${category}-search`).value;
+    const errorMessageContainer = document.getElementById(`${category}-error-message`);
+
     await displayList(category, searchText);
 
     const container = document.getElementById(`${category}-list`);
@@ -57,5 +59,12 @@ async function search(category) {
         const errorMessage = document.createElement('p');
         errorMessage.textContent = 'Nenhum resultado encontrado.';
         list.appendChild(errorMessage);
+    }
+
+    errorMessageContainer.textContent = '';
+    
+    if (searchText.trim() === '' || searchText.length < 1) {
+        errorMessageContainer.textContent = 'Por favor, insira pelo menos 1 caracter para pesquisar.';
+        return;
     }
 }
